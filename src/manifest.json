@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+
+  "name": "parcel test",
+  "version": "0.0.1",
+  "description": "testing out parcel for browser ext building",
+  "homepage_url": "https://github.com/transientBug/browser-extension",
+
+  "icons": {
+    "48": "assets/icons/hexagon.svg"
+  },
+
+  "permissions": ["activeTab", "storage", "identity"],
+
+  "page_action": {
+    "show_matches": ["*://*/*"],
+    "hide_matches": ["*://*.transientbug.ninja/*", "*://localhost/*"],
+    "default_icon": "assets/icons/hexagon.svg",
+    "default_title": "Save to transientBug",
+    "default_popup": "popup/index.html"
+  },
+
+  "options_ui": {
+    "browser_style": true,
+    "chrome_style": true,
+    "page": "options/index.html"
+  },
+
+  "background": {
+    "scripts": ["background/index.ts"]
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "firefox@transientbug.ninja",
+      "strict_min_version": "70.0"
+    }
+  }
+}

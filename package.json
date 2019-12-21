@@ -1,0 +1,29 @@
+{
+  "name": "parcel-ext",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/manifest.json",
+    "build": "parcel build src/manifest.json",
+    "lint:addon": "addons-linter dist --self-hosted",
+    "package": "yarn build && yarn web-ext build --source-dir dist --overwrite-dest"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-web-extension": "^1.5.2",
+    "postcss-modules": "^1.4.1",
+    "tailwindcss": "^1.1.4",
+    "typescript": "^3.7.4",
+    "web-ext": "^3.2.1"
+  },
+  "dependencies": {
+    "@types/firefox-webext-browser": "^70.0.1",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "addons-linter": "^1.19.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "webextension-polyfill": "^0.5.0"
+  }
+}
