@@ -7,7 +7,9 @@
   "homepage_url": "https://github.com/JoshAshby/parcel-browser-ext-test",
 
   "icons": {
-    "48": "assets/icons/hexagon.svg"
+    "24": "assets/icons/hexagon.png",
+    "48": "assets/icons/hexagon_2.png",
+    "128": "assets/icons/hexagon_3.png"
   },
 
   "permissions": ["activeTab", "storage", "identity"],
@@ -15,7 +17,7 @@
   "page_action": {
     "show_matches": ["*://*/*"],
     "hide_matches": ["*://localhost/*"],
-    "default_icon": "assets/icons/hexagon.svg",
+    "default_icon": "assets/icons/hexagon.png",
     "default_title": "click me!",
     "default_popup": "popup/index.html"
   },
