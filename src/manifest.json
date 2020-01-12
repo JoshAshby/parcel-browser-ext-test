@@ -11,8 +11,7 @@
     "48": "assets/icons/hexagon_2.png",
     "128": "assets/icons/hexagon_3.png"
   },
-
-  "permissions": ["activeTab", "storage", "identity"],
+  "permissions": [],
 
   "page_action": {
     "show_matches": ["*://*/*"],

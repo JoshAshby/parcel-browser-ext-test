@@ -1,7 +1,7 @@
-import browser from "webextension-polyfill";
+import browser from "webextension-polyfill"
 
-console.log("Booting!");
+console.log("Booting!")
 
 browser.runtime.onInstalled.addListener(({ reason }) => {
-  console.log({ reason });
-});
+  console.log("Installed", { reason })
+})

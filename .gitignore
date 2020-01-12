@@ -12,6 +12,8 @@
 # production
 /dist
 /web-ext-artifacts
+*.crx
+*.pem
 
 # misc
 .DS_Store
